@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestructura y Redes</title>
+    <style>
+        /* Estilos para el fondo */
+        body {
+            background: linear-gradient(to bottom, #064e3b, #34C759); /* Gradiente de verde oscuro a verde claro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            background-color: #a31111;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            transition: color 0.5s, transform 0.5s;
+        }
+
+        header h1:hover {
+            color: #FFD700;
+            transform: scale(1.1);
+        }
+
+        /* Estilos para las imágenes con animación */
+        header .imagen {
+            height: auto;
+            border-radius: 10px;
+            opacity: 0; /* Comienza invisible */
+            transform: scale(0.9); /* Comienza un poco más pequeña */
+            animation: aparecer 1.5s ease-in-out forwards; /* Animación de aparecer */
+        }
+
+        /* Imagen de la izquierda: Duplicar tamaño */
+        header .imagen-izquierda {
+            width: 350px; /* Duplicar tamaño */
+            animation-delay: 0.5s; /* Retardo para la animación */
+        }
+
+        /* Imagen de la derecha: Mantener tamaño */
+        header .imagen-derecha {
+            width: 100px; /* Mantener tamaño normal */
+            animation-delay: 1s; /* Retardo para la animación */
+        }
+
+        /* Definición de la animación */
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1); /* Llega al tamaño original */
+            }
+        }
+
+        /* Estilos para el cuadro rojo */
+        .cuadro-rojo {
+            background-color: #a31111; /* Rojo */
+            color: #FFFFFF;
+            padding: 20px; /* Aumentar el relleno */
+            font-size: 26px; /* Texto más grande */
+            font-weight: bold;
+            text-align: center;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transform: perspective(800px) rotateX(0deg) rotateY(0deg); /* Perspectiva inicial */
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .cuadro-rojo:hover {
+            transform: perspective(800px) rotateX(10deg) rotateY(10deg); /* Efecto de inclinación dinámica */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
+        }
+
+        /* Estilos para el contenido */
+        .contenido {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #DDDDDD;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos llamativos para el título */
+        .contenido h2 {
+            color: #FFFFFF;
+            font-size: 32px;
+            text-align: center;
+            background-color: #34C759; /* Fondo verde llamativo */
+            padding: 15px;
+            margin: -20px -20px 20px -20px; /* Sin margen para que abarque todo el ancho del cuadro */
+            border-radius: 10px 10px 0 0; /* Bordes redondeados solo arriba */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contenido ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contenido li {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #333333;
+            padding: 10px;
+            border: 1px solid #DDDDDD;
+            border-radius: 5px;
+            background-color: #F9F9F9;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .contenido li:hover {
+            transform: scale(1.05);
+            background-color: #056e52;
+            color: #01eded;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #064e3b; /* Verde oscuro */
+            color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer .boton {
+            margin-top: 10px;
+            background-color: #34C759; /* Verde claro */
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        footer .boton:hover {
+            background-color: #28a745;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-vertical.png" alt="Imagen izquierda" class="imagen imagen-izquierda"> <!-- Imagen izquierda duplicada -->
+        <h1>Infraestructura y Redes</h1>
+        <img src="ecuador.jpeg" alt="Imagen derecha" class="imagen imagen-derecha"> <!-- Imagen derecha normal -->
+    </header>
+    <div class="contenido">
+        <h2>Principales Actividades</h2>
+        <ul>
+            <li><strong>Administración y mantenimiento de la red informática:</strong> Esto incluye la configuración, gestión y solución de problemas de la red local (LAN), la red de área amplia (WAN) y las conexiones a internet.</li>
+            <li><strong>Gestión de servidores:</strong> Administración, configuración, monitorización y mantenimiento de los servidores físicos y virtuales de la institución.</li>
+            <li><strong>Seguridad informática:</strong> Implementación y gestión de medidas de seguridad para proteger los sistemas, la información y los datos contra accesos no autorizados, virus y otras amenazas cibernéticas.</li>
+            <li><strong>Soporte técnico:</strong> Proporcionar asistencia técnica a los usuarios en hardware, software y problemas de conectividad.</li>
+            <li><strong>Gestión de la infraestructura de comunicaciones:</strong> Administración de sistemas telefónicos, videoconferencias y otras plataformas de comunicación.</li>
+        </ul>
+    </div>
+    <footer>
+        <p>© 2025 Consejo Provincial de Tungurahua</p>
+        <button class="boton" onclick="window.location.href='index.html';">Volver a la página principal</button>
+    </footer>
+</body>
+</html>
