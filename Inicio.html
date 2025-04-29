@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejo Provincial de Tungurahua</title>
+    <style>
+        /* Estilos para el fondo */
+        body {
+            background: linear-gradient(to bottom, #064e3b, #34C759); /* Gradiente de verde oscuro a verde claro */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            background-color: #a31111;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #FFFFFF;
+        }
+
+        header h1 {
+            color: #FFFFFF;
+            font-size: 36px;
+            margin: 0;
+            transition: color 0.5s, transform 0.5s; /* Transición suave */
+        }
+
+        header h1:hover {
+            color: #FFD700; /* Cambia a amarillo al pasar el cursor */
+            transform: scale(1.1); /* Aumenta el tamaño un 10% */
+        }
+
+        /* Estilos para el contenido */
+        .contenido {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #DDDDDD;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centra los botones */
+        }
+
+        .contenido .boton-menu {
+            background-color: #34C759; /* Verde claro */
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px; /* Espaciado entre botones */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+        }
+
+        .contenido .boton-menu:hover {
+            background-color: #28a745; /* Cambia el color al pasar el cursor */
+            transform: scale(1.1); /* Aumenta el tamaño del botón ligeramente */
+        }
+
+        /* Estilos para la animación */
+        .animacion {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .animacion img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            opacity: 0; /* Comienza invisible */
+            animation: fadeIn 2s ease-in-out forwards; /* Animación de desvanecimiento */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9); /* Comienza más pequeño */
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1); /* Termina en tamaño original */
+            }
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #064e3b; /* Verde oscuro */
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer .boton {
+            margin-top: 10px;
+            background-color: #34C759; /* Verde claro */
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+        }
+
+        footer .boton:hover {
+            background-color: #28a745; /* Cambia el color al pasar el cursor */
+            transform: scale(1.1); /* Aumenta el tamaño del botón ligeramente */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Consejo Provincial de Tungurahua</h1>
+    </header>
+    <div class="contenido">
+        <button class="boton-menu" onclick="window.location.href='In y red.html';">INFRAESTRUCTURA Y REDES</button>
+        <button class="boton-menu" onclick="window.location.href='Sistemas de informacion y software.html';">SISTEMA DE INFORMACIÓN Y SOFTWARE</button>
+        <button class="boton-menu" onclick="window.location.href='planificacion y gestion de prot¿yectos.html';">PLANIFICACIÓN Y GESTION DE PROYTECTOS</button>
+        <button class="boton-menu" onclick="window.location.href='otras funciones.html';">OTRAS FUNCIONES</button>
+    </div>
+    <!-- Animación con imagen -->
+    <div class="animacion">
+        <img src="logo-vertical.png" alt="Consejo Provincial de Tungurahua">
+    </div>
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Consejo Provincial de Tungurahua</p>
+        <button class="boton" onclick="window.location.href='index.html';">Volver a la página principal</button>
+    </footer>
+</body>
+</html>
